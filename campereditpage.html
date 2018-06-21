@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Merit System</title>
+  <link href="css/campereditstyle.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <ul>
+    <li class="dropdown">
+      <a id="file" class="dropbtn">File</a>
+      <div class="dropdown-content">
+        <a id="save">Save</a>
+        <a id="save-as">Save As</a>
+        <label>
+          <a id="open">Open</a>
+          <input type="file" class="nonstart" id="openfile"/>
+        </label>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a id="edit" class="dropbtn">Edit</a>
+      <div class="dropdown-content">
+        <a id="new-camper">Create New Camper</a>
+        <a id="edit-camper">Edit Camper</a>
+      </div>
+    </li>
+  </ul>
+
+  <!-- Search bars -->
+  <div class="search">
+    <form>
+      <input type="text" id="searchbar" placeholder="Search.." />
+    </form>
+  </div>
+
+  <!-- Edit Camper -->
+  <div class="editcamper">
+    <h2>Edit Camper</h2>
+    <div id="name">
+      <b>Camper Name: <input type="text" id="name-edit" placeholder="" /></b>
+    </div>
+    <div id="tribe">
+      <b>Tribe:</b>
+      <select id="select-tribe">
+        <option>Waya</option>
+        <option>Awahili</option>
+      </select>
+    </div>
+    <div id="edit-rank">
+      <b>Edit Ranks:</b>
+      <div id="edit-rank-data"></div>
+      <button id="new-rank-button">Add New</button>
+    </div>
+    <div id="edit-skills">
+      <b>Edit Skills:</b>
+      <div id="edit-skills-data"></div>
+      <button id="new-skill-button">Add New</button>
+    </div>
+    <br>
+    <button id="submit-button">Submit</button>
+  </div>
+
+  <!-- Templates -->
+  <div id="rank-template" class="nonstart camper-ranks-update">
+    <select class="rank-select">
+      <option>NA</option>
+      <option>Hunter</option>
+      <option>Brave</option>
+      <option>Scout</option>
+      <option>Cheiftan</option>
+    </select>
+    <input type="text" placeholder="MM/DD/YYY" class="rank-select-date"/>
+    <br>
+  </div>
+
+  <div id="skill-template" class="nonstart camper-skills-update">
+    <select class="skill-select">
+      <option>Archery</option>
+      <option>Arts and Crafts</option>
+      <option>Basketball</option>
+      <option>Bible Study</option>
+      <option>Canoeing</option>
+      <option>Climbing</option>
+      <option>Cooking</option>
+      <option>Dance</option>
+      <option>Drama</option>
+      <option>Drumline</option>
+      <option>Fishing</option>
+      <option>Fitness</option>
+      <option>Flag Football</option>
+      <option>Horseback Riding</option>
+      <option>Model Rocketry</option>
+      <option>Outdoor Living</option>
+      <option>Rec Sports</option>
+      <option>Riflery</option>
+      <option>Super Science</option>
+      <option>SNAG</option>
+      <option>Soccer</option>
+      <option>Swimming</option>
+      <option>Tumbling</option>
+    </select>
+    <div id="skillrank">
+      <select class="skillrank-select">
+        <option>NA</option>
+        <option>Hunter</option>
+        <option>Brave</option>
+        <option>Scout</option>
+        <option>Chieften</option>
+      </select>
+      <input type="text" placeholder="year, year, year" class="skillyears-select"/>
+      <br>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/FileSaver.js"></script>
+  <script src="js/Skill.js"></script>
+  <script src="js/Camper.js"></script>
+  <script src="js/Rank.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/sharedcommands.js"></script>
+  <script src="js/campereditcommands.js"></script>
+
+</body>
+
+
+</html>

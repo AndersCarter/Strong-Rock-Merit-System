@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link href="css/indexstyle.css" type="text/css" rel="stylesheet" />
+  <title>Merit System</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <ul>
+    <li class="dropdown">
+      <a id="file" class="dropbtn">File</a>
+      <div class="dropdown-content">
+        <a id="save">Save</a>
+        <a id="save-as">Save As</a>
+        <label>
+          <a id="open">Open</a>
+          <input type="file" class="nonstart" id="openfile"/>
+        </label>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a id="edit" class="dropbtn">Edit</a>
+      <div class="dropdown-content">
+        <a id="new-camper">Create New Camper</a>
+        <a id="edit-camper">Edit Camper</a>
+      </div>
+    </li>
+  </ul>
+
+
+
+  <!-- Search bars -->
+  <div class="search">
+    <form>
+      <input type="text" id="searchbar" placeholder="Search.." />
+    </form>
+  </div>
+
+<!-- Did you mean portion -->
+  <div class="didyoumean">
+    <h3 id="didyou"></h3>
+    <div id="pickcamper">
+    </div>
+  </div>
+
+
+
+  <!-- JavaScript -->
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/FileSaver.js"></script>
+  <script src="js/Skill.js"></script>
+  <script src="js/Camper.js"></script>
+  <script src="js/Rank.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/sharedcommands.js"></script>
+  <script src="js/indexcommands.js"></script>
+
+</body>
+
+</html>
